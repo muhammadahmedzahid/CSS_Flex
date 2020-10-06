@@ -1,0 +1,42 @@
+.flexbox-container {
+  display: flex;
+  /* Below line is used to align the items in the main-axis and the main-axises is the same for the flex-direction */
+  justify-content: center;
+  /* cross-axises is other axises the below line is used to align the item to the opposite direction */
+  align-items: center;
+
+  /* align-content is used along with flex-wrap it is used to fill the gap it also uses the height attributes*/
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+  /* height: 700px; */
+}
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+.flexbox-item-1 {
+  /* flex-shrink: 0;  by default its value 1*/
+  /* the above property is used when we don't want to shrink the item inside the container */
+  /* flex-grow: 1;  by default is used 0 value*/
+  /* the above is used to take the place of the rest of place in it */
+  /* flex-basis: 0; */
+  /* the above property is used to override the width:200px and now the item starts with one pixel */
+  /* the above basically used to gave the initial height and width of the item */
+  /* align-self: center; */
+  /* the above property overrides the align-items: property; */
+  /* order: 1; */
+  /* the above property is used to change the index of the items */
+  /* flex: 1 0 1; */
+  /* shrink grow basis is the three in that order */
+  /* flex: 1; */
+  /* the above put the shrink grow basis all properties to it */
+  min-height: 100px;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+}
+.flexbox-item-3 {
+  min-height: 300px;
+}
